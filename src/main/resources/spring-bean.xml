@@ -9,10 +9,19 @@
            http://www.springframework.org/schema/context/spring-context-3.1.xsd">
 
  <context:annotation-config/>
- <bean class="example1.quoter.TerminatorQuoter" id="terminatorQuoter">
+   <!-- First package-->
+<!-- <bean class="example1.quoter.TerminatorQuoter" id="terminatorQuoter">
      <property name="message" value="I'll be back"/>
  </bean>
 
     <bean class="example1.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
-    <bean class="example1.quoter.ProfilingHandlerBeanPostProcessor"/>
+    <bean class="example1.quoter.ProfilingHandlerBeanPostProcessor"/>-->
+    <!-- Second package -->
+    <bean class="example2.quoter.TerminatorQuoter" id="terminatorQuoter">
+        <property name="message" value="I'll be back"/>
+    </bean>
+
+    <bean class="example2.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="example2.quoter.ProfilingHandlerBeanPostProcessor"/>
+
 </beans>
