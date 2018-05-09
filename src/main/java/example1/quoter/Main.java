@@ -5,7 +5,7 @@ import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionReader;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Main {
+public class  Main {
     public static void main(String[] args) throws InterruptedException {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring-bean.xml");
         while (true) {

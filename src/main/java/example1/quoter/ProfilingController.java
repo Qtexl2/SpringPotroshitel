@@ -7,7 +7,8 @@ public class ProfilingController implements ProfilingControllerMBean {
         return enabled;
     }
 
+    @Override
     public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
+            this.enabled = enabled;
     }
 }

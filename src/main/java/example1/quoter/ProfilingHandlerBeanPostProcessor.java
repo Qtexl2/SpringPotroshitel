@@ -14,7 +14,7 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ProfilingHandlerBeanPostProcessor implements BeanPostProcessor{
+public class  ProfilingHandlerBeanPostProcessor implements BeanPostProcessor{
 
     private Map<String , Class> map = new HashMap<String, Class>();
     private ProfilingController controller = new ProfilingController();
@@ -26,7 +26,7 @@ public class ProfilingHandlerBeanPostProcessor implements BeanPostProcessor{
 
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-            Class<?> beanClass = bean.getClass();
+            Class beanClass = bean.getClass();
             if(beanClass.isAnnotationPresent(Profiling.class)){
                 map.put(beanName, beanClass);
 
