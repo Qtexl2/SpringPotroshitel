@@ -1,8 +1,9 @@
-package example2.quoter;
+package example3.quoter;
 
 import javax.annotation.PostConstruct;
 
 @Profiling
+@DeprecatedClass(newImpl = T1000.class)
 public class TerminatorQuoter implements Quoter {
     private String message;
 

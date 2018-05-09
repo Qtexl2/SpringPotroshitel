@@ -10,18 +10,29 @@
 
  <context:annotation-config/>
    <!-- First package-->
-<!-- <bean class="example1.quoter.TerminatorQuoter" id="terminatorQuoter">
+<!-- <bean class="example1.TerminatorQuoter" id="terminatorQuoter">
      <property name="message" value="I'll be back"/>
  </bean>
 
-    <bean class="example1.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
-    <bean class="example1.quoter.ProfilingHandlerBeanPostProcessor"/>-->
+    <bean class="example1.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="example1.ProfilingHandlerBeanPostProcessor"/>-->
     <!-- Second package -->
-    <bean class="example2.quoter.TerminatorQuoter" id="terminatorQuoter">
+<!--
+    <bean class="example2.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
     </bean>
+    <bean class="example2.PostProxyInvokerContextListener"/>
+    <bean class="example2.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="example2.ProfilingHandlerBeanPostProcessor"/>
+-->
 
-    <bean class="example2.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
-    <bean class="example2.quoter.ProfilingHandlerBeanPostProcessor"/>
+    <!-- Third package -->
+    <bean class="example3.quoter.TerminatorQuoter" id="terminatorQuoter">
+        <property name="message" value="I'll be back"/>
+    </bean>
+    <bean class="example3.quoter.DeprecationHandlerFactoryPostProcessor" />
+    <bean class="example3.quoter.PostProxyInvokerContextListener"/>
+    <bean class="example3.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="example3.quoter.ProfilingHandlerBeanPostProcessor"/>
 
 </beans>
