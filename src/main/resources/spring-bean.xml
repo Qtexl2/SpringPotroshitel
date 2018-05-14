@@ -35,4 +35,5 @@
     <bean class="example3.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
     <bean class="example3.quoter.ProfilingHandlerBeanPostProcessor"/>
 
+
 </beans>
