@@ -27,13 +27,13 @@
 -->
 
     <!-- Third package -->
-    <bean class="example3.quoter.TerminatorQuoter" id="terminatorQuoter">
+    <bean class="potrashitel.example3.quoter.TerminatorQuoter" id="terminatorQuoter">
         <property name="message" value="I'll be back"/>
     </bean>
-    <bean class="example3.quoter.DeprecationHandlerFactoryPostProcessor" />
-    <bean class="example3.quoter.PostProxyInvokerContextListener"/>
-    <bean class="example3.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
-    <bean class="example3.quoter.ProfilingHandlerBeanPostProcessor"/>
+    <bean class="potrashitel.example3.quoter.DeprecationHandlerFactoryPostProcessor" />
+    <bean class="potrashitel.example3.quoter.PostProxyInvokerContextListener"/>
+    <bean class="potrashitel.example3.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
+    <bean class="potrashitel.example3.quoter.ProfilingHandlerBeanPostProcessor"/>
 
 
 </beans>
